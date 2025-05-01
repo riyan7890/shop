@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Modern E-Commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#"><i class="fas fa-phone"></i> +1 234 567 890</a>
+                <a href="#"><i class="fas fa-envelope"></i> support@shopease.com</a>
+            </div>
+            <div class="top-switchers">
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+                <select id="currency-switcher">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">ShopEase</a></h1>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Electronics</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Home & Garden</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">Sports</a>
+                    </div>
+                </li>
+                <li><a href="arrivals.html">New Arrivals</a></li>
+                <li><a href="ldeas.html">Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('https://img.freepik.com/free-photo/young-brunette-woman-posing-camera_114579-64927.jpg?semt=ais_hybrid&w=740')">
+                <div class="slide-content">
+                    <h2>Summer Collection 2023</h2>
+                    <p>Up to 50% off on selected items</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://www.teachingchannel.com/wp-content/uploads/2023/06/k12-top-tech-2022.png')">
+                <div class="slide-content">
+                    <h2>New Tech Gadgets</h2>
+                    <p>Discover the latest innovations</p>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://framerusercontent.com/images/8P2hhofO7RsYycW7urJeYXGbq7U.jpg')">
+                <div class="slide-content">
+                    <h2>Home Essentials</h2>
+                    <p>Everything you need for your home</p>
+                    <a href="#" class="btn">Browse</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnZ3LuqSbxgfPyc2HjZFXfnMSn-xfWyU6xg&s"alt="Electronics">
+                    <h3>Electronics</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/041/906/032/small/can-t-make-any-mistake-female-fashion-designer-works-on-the-new-clothes-in-the-workshop-photo.jpg" alt="Fashion">
+                    <h3>Fashion</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/059/891/929/small/corten-steel-stairs-connecting-different-levels-in-a-lush-garden-photo.jpg" alt="Home & Garden">
+                    <h3>Home & Garden</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <div class="category-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/025/174/small/portrait-of-a-young-beautiful-pakistani-girl-a-muslim-girl-in-a-hijab-generative-ai-photo.jpg" alt="Beauty">
+                    <h3>Beauty</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and upcoming sales</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ShopEase</h3>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@shopease.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ShopEase. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Subtotal: <span class="subtotal">$0.00</span></p>
+            <a href="#" class="btn">Checkout</a>
+            <a href="#" class="btn btn-light">View Cart</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" class="switch-to-register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="register-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Register</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" class="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <div class="chatbot-icon">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window">
+            <div class="chat-header">
+                <h3>Customer Support</h3>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

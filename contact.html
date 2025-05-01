@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FashionHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#"><i class="fas fa-truck"></i> Free shipping on orders over $50</a>
+                <a href="#"><i class="fas fa-phone"></i> +1 234 567 890</a>
+            </div>
+            <div class="top-switchers">
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+                <select id="currency-switcher">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">FashionHub</a></h1>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search for clothes...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Women <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Tops</a>
+                        <a href="#">Dresses</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Jackets</a>
+                        <a href="#">Activewear</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Men <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Shirts</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Jackets</a>
+                        <a href="#">Activewear</a>
+                    </div>
+                </li>
+                <li><a href="arrivals.html">New Arrivals</a></li>
+                <li><a href="ldeas.html">Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out with any questions or feedback.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>123 Fashion Street<br>New York, NY 10001<br>United States</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone Number</h3>
+                            <p>+1 234 567 890</p>
+                            <p>+1 987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Address</h3>
+                            <p>info@fashionhub.com</p>
+                            <p>support@fashionhub.com</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Friday: 9am - 8pm</p>
+                            <p>Saturday - Sunday: 10am - 6pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us on Map</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.21520917933!2d-73.9878449245257!3d40.74844097138962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689876910955!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What are your shipping options?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer several shipping options including standard shipping (3-5 business days), express shipping (1-2 business days), and free shipping on orders over $50. All orders are processed within 1-2 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I return or exchange an item?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can return or exchange items within 30 days of purchase. Items must be unworn, unwashed, and with original tags attached. Please visit our Returns & Exchanges page for detailed instructions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. All transactions are secure and encrypted.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I track my order?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Once your order has shipped, you'll receive a confirmation email with a tracking number. You can track your order by clicking the tracking link in the email or by logging into your account.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer international shipping?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we ship to most countries worldwide. International shipping rates and delivery times vary depending on the destination. Please note that customers are responsible for any customs or import fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new arrivals and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FashionHub</h3>
+                    <p>Your destination for the latest fashion trends and styles.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Women's Clothing</a></li>
+                        <li><a href="#">Men's Clothing</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="deals.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, New York, NY</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@fashionhub.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FashionHub. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Subtotal: <span class="subtotal">$0.00</span></p>
+            <a href="#" class="btn">Checkout</a>
+            <a href="#" class="btn btn-light">View Cart</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" class="switch-to-register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="register-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Register</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" class="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

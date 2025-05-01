@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers - FashionHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-links">
+                <a href="#"><i class="fas fa-truck"></i> Free shipping on orders over $50</a>
+                <a href="#"><i class="fas fa-phone"></i> +1 234 567 890</a>
+            </div>
+            <div class="top-switchers">
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+                <select id="currency-switcher">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">FashionHub</a></h1>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Search for clothes...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Women <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Tops</a>
+                        <a href="#">Dresses</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Jackets</a>
+                        <a href="#">Activewear</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Men <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Shirts</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Jackets</a>
+                        <a href="#">Activewear</a>
+                    </div>
+                </li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a class="active" href="deals.html">Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header deals-header">
+        <div class="container">
+            <h1>Hot Deals & Offers</h1>
+            <p>Save big on your favorite fashion items</p>
+        </div>
+    </section>
+
+    <!-- Deals Countdown -->
+    <section class="deals-countdown">
+        <div class="container">
+            <div class="countdown-box">
+                <h3>Flash Sale Ends In:</h3>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <p>Hurry up! Limited time offer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <div class="section-tabs">
+                <button class="tab-btn active" data-tab="all-deals">All Deals</button>
+                <button class="tab-btn" data-tab="women-deals">Women's</button>
+                <button class="tab-btn" data-tab="men-deals">Men's</button>
+                <button class="tab-btn" data-tab="accessories-deals">Accessories</button>
+            </div>
+
+            <div class="tab-content active" id="all-deals">
+                <div class="deals-grid">
+                    <!-- Deals will be loaded here via JavaScript -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="women-deals">
+                <div class="deals-grid">
+                    <!-- Women's deals will be loaded here via JavaScript -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="men-deals">
+                <div class="deals-grid">
+                    <!-- Men's deals will be loaded here via JavaScript -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="accessories-deals">
+                <div class="deals-grid">
+                    <!-- Accessories deals will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new arrivals and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FashionHub</h3>
+                    <p>Your destination for the latest fashion trends and styles.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Women's Clothing</a></li>
+                        <li><a href="#">Men's Clothing</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="deals.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion St, New York, NY</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@fashionhub.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 FashionHub. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be loaded here via JavaScript -->
+        </div>
+        <div class="cart-total">
+            <p>Subtotal: <span class="subtotal">$0.00</span></p>
+            <a href="#" class="btn">Checkout</a>
+            <a href="#" class="btn btn-light">View Cart</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" class="switch-to-register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="register-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Register</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" class="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="product-quick-view">
+                <!-- Product details will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/ideas.js"></script>
+</body>
+</html>
